@@ -14,10 +14,9 @@ for i in range(1, 101):
         pass
 
 sum=0
-for i in range(500001):
-    if(i % 2 !=0):
-        sum += i
-    print(sum)
+for i in range(1, 500001, 2):
+    sum += i
+print(sum)
 
 # sum=0
 # for i in range(500000+1):
@@ -29,6 +28,8 @@ for i in range(500001):
 
 for i in range(2018, 0, -4):
     print(i)
+
+
 
 lowNum=2
 highNum=9
