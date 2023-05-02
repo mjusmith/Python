@@ -1,19 +1,19 @@
 class User:
-    def __init__(self, first_name, last_name, email, age):
+    def __init__(self, first_name, last_name, email, age, is_rewards_member = False, gold_card_points = 0):
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.age = age
         
-        self.is_rewards_member = False
-        self.gold_card_points = 0
+        self.is_rewards_member = is_rewards_member
+        self.gold_card_points = gold_card_points
 
     def display_info(self):
-        print(f"{self.first_name} {self.last_name} {self.email} {self.age}")
+        print(f'{self.first_name} {self.last_name} {self.email} {self.age}')
         return self
 
     def enroll(self):
-        if self.is_rewards_member != False:
+        if self.is_rewards_member == True:
             print("FAIL")
             return self
         else:
@@ -55,9 +55,9 @@ obi.display_info().enroll().spend_points(50)
 
 ani.enroll().spend_points(80)
 
-print(yoda.spend_points(40))
+yoda.spend_points(40)
 
 people = [obi,ani,yoda]
 
 for person in people:
-    print(person.display_info())
+    person.display_info()
