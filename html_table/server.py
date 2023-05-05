@@ -10,8 +10,8 @@ def render_users():
         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
-    columns= ['First Name', 'Last Name', 'Full Name']
     
+    columns= ['First Name', 'Last Name', 'Full Name']
 
     return render_template('tables.html', users_data=users_data, columns=columns)
 

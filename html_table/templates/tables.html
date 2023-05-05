@@ -10,12 +10,12 @@
 <body>
     
     <div class="container-fluid">
-        <table class="table" style="width: 60%; margin: 0 auto;">
-            <thead>
-              <tr>
-                <th scope="col"> {{columns[0]}} </th>
-                <th scope="col"> {{columns[1]}} </th>
-                <th scope="col"> {{columns[2]}} </th>
+        <table class="table" style="width: 60%; margin: 0 auto;margin-top: 35px; border: 2px solid;">
+          <thead>
+            <tr>
+                {% for col in columns %}
+                <th scope="col"> {{col}} </th>
+                {% endfor %}
               </tr>
             </thead>
             <tbody>
@@ -27,8 +27,7 @@
                 </tr>
                 {% endfor %}
             </tbody>
-        </table>
-          
+        </table>     
     </div>
 
 </body>
