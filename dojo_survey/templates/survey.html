@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Vay the Bold</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container" style="margin-top: 20px;">
+      <form style="background-color: black; color: darkgrey; padding: 30px; border-radius: 25px;" action="/submit_form" method="POST">
+
+        <div class="head">
+          <h1 style="color:aquamarine; font-weight: bold;">Sir Vay</h1>
+        </div>
+
+        <div class="form-group row">
+          <label for="name" class="col-sm-2 col-form-label">Your Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Name" name="name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Dojo Location:</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="location">
+            <option disabled selected hidden>Select</option>
+            <option>City</option>
+            <option>Village</option>
+            <option>Town</option>
+            <option>Middle of Nowhere</option>
+            <option>Crop Circle</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="python">Preferred Language:</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="language">
+            <option>Python</option>
+            <option>Python</option>
+            <option>Python</option>
+            <option>Python</option>
+            <option>There is only Python</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comments"></textarea>
+        </div>
+
+        <fieldset class="form-group">
+          <div class="row" style="margin-top: 20px;">
+            <legend class="col-form-label col-sm-2 pt-0">Are you a zombie?</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked name="zombie_check">
+                <label class="form-check-label" for="zombie1">
+                  Yes, I am a zombie
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" name="zombie_check">
+                <label class="form-check-label" for="zombie2">
+                  No, I am not a zombie
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+        <div class="form-group row" style="margin-top: 20px;">
+          <div class="col-sm-2">Are you sure?</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" name="zombie_integrity">
+              <label class="form-check-label" for="zombie_integrity">
+                Yes, I am sure
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row" style="margin-top: 20px;">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sumbit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    
+    </body>
+</html>
