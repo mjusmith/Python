@@ -15,13 +15,13 @@ def submit_form():
     session['comments']=request.form['comments']
     # session['zombie_check']=request.form['zombie_check']
     session['zombie_integrity']=request.form['zombie_integrity']
-    if request.method == 'POST':
-        if 'zombie_integrity' in request.form:
-            checkbox_value = request.form['zombie_integrity']
-            checkbox_value == 'on'
-            return "I still think you're lying"
-        else:
-            return 'Scared to get caught?'
+    # if request.method == 'POST':
+    #     if 'zombie_integrity' in request.form:
+    #         checkbox_value = request.form['zombie_integrity']
+    #         checkbox_value == 'on'
+    #         return "I still think you're lying"
+    #     else:
+    #         return 'Scared to get caught?'
     return redirect ('/result')
 
 @app.route('/result')
