@@ -24,6 +24,9 @@ def submit_form():
     #         return 'Scared to get caught?'
     return redirect ('/result')
 
+    # How can I fix the checkbox return?
+    # How do I prevent failure when data is missing?
+
 @app.route('/result')
 def view_zults():
     return render_template('result.html')
