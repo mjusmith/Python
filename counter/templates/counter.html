@@ -10,10 +10,10 @@
 <body>
     <div class="container flexed">
         <div class="box autoZone"> 
-            <h1>Counter</h1>
-            {{count}}
-            <!-- <input type="button" value="Click">
-            <input type="button" value="Reset"> -->
+            <h1>Counter: {{session['count']}}</h1>
+            <form action="/increment" method="POST">
+                <input type="submit" value="Increment">
+            </form>
         </div>
     </div>
 </body>
