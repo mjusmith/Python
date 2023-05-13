@@ -9,12 +9,12 @@ def render_box():
 
 @app.route('/play/<int:number>')
 def number(number):
-    colors = ['aqua']
-    return render_template("playground.html", colors=colors) * number
+    return render_template("playground.html", number=number)
 
-# @app.route('/play/<int:number>/<string:color>')
-# def color(number, color):
-#     return render_template("playground.html", bg_color=color) * number
+@app.route('/play/<int:number>/<string:color>')
+def color(number, color):
+    colors = color
+    return render_template("playground.html", number=number, colors=colors)
 
 if __name__=="__main__":
     app.run(debug=True)
